@@ -16,7 +16,7 @@ pipeline {
 		stage('Build'){
             steps{
             echo 'hi pipeline'
-			echo "hello $(params.Person)
+			
 			echo "biography: $(params.biography)
 			echo "toog: $(params.toogle)
 			
