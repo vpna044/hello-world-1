@@ -12,24 +12,11 @@ pipeline {
 			post{
 			success{
 			archiveArtifacts '**/*.war'
+			echo 'archived'
 				}
 			}
         }
-		stage('tomcat'){
-            
-			steps{
-            echo 'hi pipeline2'
-			}
-               
-    	}
 		
-		stage('test'){
-            
-			steps{
-            echo 'hi pipeline3'
-			}
-               
-    	}
 	
 	
 	
