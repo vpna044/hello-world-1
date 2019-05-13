@@ -17,8 +17,8 @@ pipeline {
             steps{
             echo 'hi pipeline'
 			
-			echo "biography: $(params.biography)"
-			echo "toog: $(params.toogle)"
+		    echo "biography: ${params.biography}"
+		    echo "toog: ${params.toogle}"
 			
      
 			}
