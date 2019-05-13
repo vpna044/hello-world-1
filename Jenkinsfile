@@ -7,7 +7,7 @@ pipeline {
 		booleanParam(name:'toogle', defaultValue: true ,description : 'toogle this value')
 		choice (name:'my param', choices : "option1\noption2\noption3\n" , description: 'delimters within the string')
 		password (name : 'password' , defaultValue: 'secret' , description: 'enter password')
-		file (name: 'file', defaultValue: '' , description: 'choose a file')
+		file (name: 'file' , description: 'choose a file')
 	
 	}
 	
