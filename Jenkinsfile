@@ -19,7 +19,7 @@ pipeline {
 			
 		    echo "biography: ${params.biography}"
 		    echo "toog: ${params.toogle}"
-			
+		    echo "jobname: ${JOB_NAME}"
      
 			}
 			
