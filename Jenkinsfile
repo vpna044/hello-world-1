@@ -18,7 +18,17 @@ pipeline {
         }
 		
 		
-		
+		stage('deploy to tomcat'){
+
+			steps{
+
+			build 'pipeline2_helloworld_job2_deploytomcat'
+
+
+			}
+
+
+		}
 	
 	
 	
