@@ -6,7 +6,8 @@ node('master'){
 	
 	}
 	
-	stage('archiving'){
+	post{
+	success{
 	
 	archiveArtifacts '**/*.war'
 	
