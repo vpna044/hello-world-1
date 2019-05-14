@@ -11,7 +11,7 @@ node('master'){
 	
 	archiveArtifacts '**/*.war'
 	
-	}
+	}}
 	
 	stage('run other job'){
 	
