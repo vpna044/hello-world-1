@@ -6,12 +6,12 @@ node('master'){
 	
 	}
 	
-	post{
-	success{
+	stage('archive'){
+	
 	
 	archiveArtifacts '**/*.war'
 	
-	}}
+	}
 	
 	stage('run other job'){
 	
