@@ -1,0 +1,20 @@
+node('master'){
+
+	stage('build'){
+	
+	bat label: '', script: 'mvn clean package'
+	
+	}
+	
+	stage('archiving'){
+	
+	archiveArtifacts '**/*.war'
+	
+	}
+	
+	stage('run other job'){
+	
+	build 'pipeline_node_tomcat'
+	}
+	
+	}
