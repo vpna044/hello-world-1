@@ -2,6 +2,8 @@ node('master'){
 
 	stage('build'){
 	
+	git 'https://github.com/vpna044/hello-world-1.git'
+	
 	bat label: '', script: 'mvn clean package'
 	
 	}
